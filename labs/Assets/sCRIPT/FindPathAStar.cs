@@ -166,7 +166,7 @@ public class FindPathAStar : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.P)) {
 
             BeginSearch();
-            hasStarted = true;          
+            StartCoroutine(Searching());
         }
         
 
@@ -180,37 +180,64 @@ public class FindPathAStar : MonoBehaviour {
     {
         Debug.Log("searching started!");
 
-        while (!done)
+        while (!done && open.Count > 0)
         {
             // Perform some task
             Debug.Log("Coroutine is running...");
             Search(lastPos);
             // Wait for the next frame
-//            yield return true;
+            yield return new WaitForSeconds(0.05f);
         }
-
-        searchingHasFinished = true;
-        yield return null;
-
-        Debug.Log("Coroutine finished!");
+        if (done)
+        {
+            ReconstructPath(); // Maak het pad als we klaar zijn
+            StartCoroutine(MovePlayer()); // Laat de speler lopen (Task 2.3)
+        }
+        else
+        {
+            Debug.Log("Geen pad gevonden!");
+        }
     }
+    IEnumerator MovePlayer()
+    {
+        // Zoek het spelersobject (zorg dat je Cube de tag "Player" heeft of sleep hem in de inspector)
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
 
+        // Als er geen player tag is, gebruiken we de start marker als fallback voor visualisatie
+        if (player == null && startNode != null) player = startNode.marker;
+
+        foreach (PathMarker step in path)
+        {
+            // Beweeg de speler naar de locatie van de marker
+            // We vermenigvuldigen met maze.scale om de juiste wereldpositie te krijgen
+            Vector3 targetPos = new Vector3(step.location.x * maze.scale, 0.5f, step.location.z * maze.scale);
+
+            if (player != null)
+                player.transform.position = targetPos;
+
+            // Wacht 1 seconde per stap zoals gevraagd in de opdracht 
+            yield return new WaitForSeconds(1.0f);
+        }
+        Debug.Log("Speler heeft het doel bereikt!");
+    }
     bool PathHasConstructed = false;
     List<PathMarker> path = new List<PathMarker>();
     void ReconstructPath()
     {
-        
-        path.Add(closed[closed.Count-1]);
-        var p = closed[closed.Count-1].parent;
-        while(p!= startNode)
+        path.Clear(); // Maak de lijst leeg voor de zekerheid
+        PathMarker current = lastPos; // Begin bij het einde (het doel)
+
+        // Zolang we nog niet bij de start zijn en er een parent is
+        while (current.parent != null)
         {
-            path.Insert(0, p);
-            p = p.parent;
+            path.Insert(0, current); // Voeg toe aan het begin van de lijst
+            current = current.parent; // Stap terug naar de ouder
         }
-        path.Insert(0,startNode);
+        // Voeg de start node ook toe
+        path.Insert(0, current);
+
         PathHasConstructed = true;
-
-
+        Debug.Log("Pad gevonden met " + path.Count + " stappen.");
     }
-   
+
 }
