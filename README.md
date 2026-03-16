@@ -21,8 +21,14 @@ Het gedrag van de agent wordt in de code aangestuurd door vier overschreven basi
 ## Resultaten
 Tijdens het trainingsproces van het neurale netwerk zijn de prestaties van de agent gemonitord over een verloop van 100.000 stappen. Uit de verzamelde data komen twee voornaamste observaties naar voren:
 
-Ten eerste toont de grafiek van de Cumulative Reward (zie ![Figuur 1](Figuur1.png): Ontwikkeling van de Cumulative Reward over 100.000 stappen) een sterke stijging van de geaccumuleerde beloning. Vanaf de grens van ongeveer 31.000 stappen neemt de hellingsgraad van deze stijging af. Rond de 70.000 stappen stabiliseert de curve zich en vormt een duidelijk plateau rond een gemiddelde beloningswaarde van -0.11.
-Ten tweede laat de grafiek van de Episode Length (zie ![Figuur 2](Figuur2.png): Ontwikkeling van de Environment/Episode Length over 100.000 stappen) zien dat de episodes in de beginfase van de training relatief lang duren, met uitschieters tot boven de 200 stappen per episode. Naarmate het aantal trainingsstappen toeneemt, daalt deze lengte aanzienlijk. Vanaf circa 40.000 stappen bereikt de grafiek een laag en stabiel niveau. Vanaf dat punt blijft het aantal benodigde stappen om een episode af te ronden nagenoeg constant tot aan het einde van de training.
+Ten eerste toont de grafiek van de Cumulative Reward (zie Figuur 1) een sterke stijging van de geaccumuleerde beloning. Vanaf de grens van ongeveer 31.000 stappen neemt de hellingsgraad van deze stijging af. Rond de 70.000 stappen stabiliseert de curve zich en vormt een duidelijk plateau rond een gemiddelde beloningswaarde van -0.11.
+Ten tweede laat de grafiek van de Episode Length (zie Figuur 2) zien dat de episodes in de beginfase van de training relatief lang duren, met uitschieters tot boven de 200 stappen per episode. Naarmate het aantal trainingsstappen toeneemt, daalt deze lengte aanzienlijk. Vanaf circa 40.000 stappen bereikt de grafiek een laag en stabiel niveau. Vanaf dat punt blijft het aantal benodigde stappen om een episode af te ronden nagenoeg constant tot aan het einde van de training.
+
+![Figuur 1](figuur1.png)
+(Figuur 1: Ontwikkeling van de Cumulative Reward over 100.000 stappen).
+
+![Figuur 2](figuur2.png)
+(Figuur 2: Ontwikkeling van de Environment/Episode Length over 100.000 stappen).
 
 ## Conclusie
 Uit de data kan worden afgeleid dat de AI-agent de sequentiële taak succesvol heeft aangeleerd. De sterke daling in de lengte van de episodes, gecombineerd met een vervlakking van de cumulatieve beloning rond het maximaal haalbare niveau, toont aan dat het Proximal Policy Optimization (PPO) algoritme effectief een optimale policy heeft gegenereerd.
