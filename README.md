@@ -24,10 +24,10 @@ Tijdens het trainingsproces van het neurale netwerk zijn de prestaties van de ag
 Ten eerste toont de grafiek van de Cumulative Reward (zie Figuur 1) een sterke stijging van de geaccumuleerde beloning. Vanaf de grens van ongeveer 31.000 stappen neemt de hellingsgraad van deze stijging af. Rond de 70.000 stappen stabiliseert de curve zich en vormt een duidelijk plateau rond een gemiddelde beloningswaarde van -0.11.
 Ten tweede laat de grafiek van de Episode Length (zie Figuur 2) zien dat de episodes in de beginfase van de training relatief lang duren, met uitschieters tot boven de 200 stappen per episode. Naarmate het aantal trainingsstappen toeneemt, daalt deze lengte aanzienlijk. Vanaf circa 40.000 stappen bereikt de grafiek een laag en stabiel niveau. Vanaf dat punt blijft het aantal benodigde stappen om een episode af te ronden nagenoeg constant tot aan het einde van de training.
 
-![Figuur 1](figuur1.png)
+![Figuur 1](Figuur1.png)
 (Figuur 1: Ontwikkeling van de Cumulative Reward over 100.000 stappen).
 
-![Figuur 2](figuur2.png)
+![Figuur 2](Figuur2.png)
 (Figuur 2: Ontwikkeling van de Environment/Episode Length over 100.000 stappen).
 
 ## Conclusie
