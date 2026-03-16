@@ -1,0 +1,65 @@
+{
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.13.1+cpu"
+    },
+    "CubeAgent": {
+        "checkpoints": [
+            {
+                "steps": 545,
+                "file_path": "results\\CubeAgentRays\\CubeAgent\\CubeAgent-545.onnx",
+                "reward": 0.0,
+                "creation_time": 1771948976.8910975,
+                "auxillary_file_paths": [
+                    "results\\CubeAgentRays\\CubeAgent\\CubeAgent-545.pt"
+                ]
+            },
+            {
+                "steps": 747,
+                "file_path": "results\\CubeAgentRays\\CubeAgent\\CubeAgent-747.onnx",
+                "reward": null,
+                "creation_time": 1771949054.987572,
+                "auxillary_file_paths": [
+                    "results\\CubeAgentRays\\CubeAgent\\CubeAgent-747.pt"
+                ]
+            },
+            {
+                "steps": 1071,
+                "file_path": "results\\CubeAgentRays\\CubeAgent\\CubeAgent-1071.onnx",
+                "reward": 0.0,
+                "creation_time": 1771949151.1321099,
+                "auxillary_file_paths": [
+                    "results\\CubeAgentRays\\CubeAgent\\CubeAgent-1071.pt"
+                ]
+            },
+            {
+                "steps": 2368,
+                "file_path": "results\\CubeAgentRays\\CubeAgent\\CubeAgent-2368.onnx",
+                "reward": 0.8333333333333334,
+                "creation_time": 1771949349.523078,
+                "auxillary_file_paths": [
+                    "results\\CubeAgentRays\\CubeAgent\\CubeAgent-2368.pt"
+                ]
+            },
+            {
+                "steps": 14894,
+                "file_path": "results\\CubeAgentRays\\CubeAgent\\CubeAgent-14894.onnx",
+                "reward": 0.5,
+                "creation_time": 1771949703.75686,
+                "auxillary_file_paths": [
+                    "results\\CubeAgentRays\\CubeAgent\\CubeAgent-14894.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 14894,
+            "file_path": "results\\CubeAgentRays\\CubeAgent.onnx",
+            "reward": 0.5,
+            "creation_time": 1771949703.75686,
+            "auxillary_file_paths": [
+                "results\\CubeAgentRays\\CubeAgent\\CubeAgent-14894.pt"
+            ]
+        }
+    }
+}

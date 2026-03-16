@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\marwa\\OneDrive - AP Hogeschool Antwerpen\\2deJaar\\semester2\\labAI\\lab-01-Mavan03\\MLAgent\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{071EE45E-0288-C3C5-2963-1713979EB73D}|Assembly-CSharp.csproj|c:\\users\\marwa\\onedrive - ap hogeschool antwerpen\\2dejaar\\semester2\\labai\\lab-01-mavan03\\mlagent\\assets\\scripts\\cubeagent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{071EE45E-0288-C3C5-2963-1713979EB73D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cubeagent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CubeAgent.cs",
+              "DocumentMoniker": "C:\\Users\\marwa\\OneDrive - AP Hogeschool Antwerpen\\2deJaar\\semester2\\labAI\\lab-01-Mavan03\\MLAgent\\Assets\\Scripts\\CubeAgent.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CubeAgent.cs",
+              "ToolTip": "C:\\Users\\marwa\\OneDrive - AP Hogeschool Antwerpen\\2deJaar\\semester2\\labAI\\lab-01-Mavan03\\MLAgent\\Assets\\Scripts\\CubeAgent.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CubeAgent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T15:15:50.022Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
