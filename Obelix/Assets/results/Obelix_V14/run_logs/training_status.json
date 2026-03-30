@@ -1,0 +1,65 @@
+{
+    "Obelix": {
+        "checkpoints": [
+            {
+                "steps": 3499976,
+                "file_path": "results\\Obelix_V14\\Obelix\\Obelix-3499976.onnx",
+                "reward": 4.739001753074782,
+                "creation_time": 1774895204.5125034,
+                "auxillary_file_paths": [
+                    "results\\Obelix_V14\\Obelix\\Obelix-3499976.pt"
+                ]
+            },
+            {
+                "steps": 3999989,
+                "file_path": "results\\Obelix_V14\\Obelix\\Obelix-3999989.onnx",
+                "reward": 5.8763351076179084,
+                "creation_time": 1774896013.958834,
+                "auxillary_file_paths": [
+                    "results\\Obelix_V14\\Obelix\\Obelix-3999989.pt"
+                ]
+            },
+            {
+                "steps": 4499952,
+                "file_path": "results\\Obelix_V14\\Obelix\\Obelix-4499952.onnx",
+                "reward": 5.410584946473439,
+                "creation_time": 1774896828.4085827,
+                "auxillary_file_paths": [
+                    "results\\Obelix_V14\\Obelix\\Obelix-4499952.pt"
+                ]
+            },
+            {
+                "steps": 4999974,
+                "file_path": "results\\Obelix_V14\\Obelix\\Obelix-4999974.onnx",
+                "reward": 5.856468284130097,
+                "creation_time": 1774897717.14085,
+                "auxillary_file_paths": [
+                    "results\\Obelix_V14\\Obelix\\Obelix-4999974.pt"
+                ]
+            },
+            {
+                "steps": 5000102,
+                "file_path": "results\\Obelix_V14\\Obelix\\Obelix-5000102.onnx",
+                "reward": 5.856468284130097,
+                "creation_time": 1774897717.2565203,
+                "auxillary_file_paths": [
+                    "results\\Obelix_V14\\Obelix\\Obelix-5000102.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 5000102,
+            "file_path": "results\\Obelix_V14\\Obelix.onnx",
+            "reward": 5.856468284130097,
+            "creation_time": 1774897717.2565203,
+            "auxillary_file_paths": [
+                "results\\Obelix_V14\\Obelix\\Obelix-5000102.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.13.1+cpu"
+    }
+}

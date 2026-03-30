@@ -1,0 +1,56 @@
+{
+    "Obelix": {
+        "checkpoints": [
+            {
+                "steps": 499779,
+                "file_path": "results\\Obelix_V7\\Obelix\\Obelix-499779.onnx",
+                "reward": -3.632765019641203,
+                "creation_time": 1774799845.8505788,
+                "auxillary_file_paths": [
+                    "results\\Obelix_V7\\Obelix\\Obelix-499779.pt"
+                ]
+            },
+            {
+                "steps": 999882,
+                "file_path": "results\\Obelix_V7\\Obelix\\Obelix-999882.onnx",
+                "reward": -2.7502859564764157,
+                "creation_time": 1774800705.4985502,
+                "auxillary_file_paths": [
+                    "results\\Obelix_V7\\Obelix\\Obelix-999882.pt"
+                ]
+            },
+            {
+                "steps": 1499176,
+                "file_path": "results\\Obelix_V7\\Obelix\\Obelix-1499176.onnx",
+                "reward": -3.9867276413874193,
+                "creation_time": 1774801513.4049408,
+                "auxillary_file_paths": [
+                    "results\\Obelix_V7\\Obelix\\Obelix-1499176.pt"
+                ]
+            },
+            {
+                "steps": 1500009,
+                "file_path": "results\\Obelix_V7\\Obelix\\Obelix-1500009.onnx",
+                "reward": -4.034333718319734,
+                "creation_time": 1774801513.4803877,
+                "auxillary_file_paths": [
+                    "results\\Obelix_V7\\Obelix\\Obelix-1500009.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1500009,
+            "file_path": "results\\Obelix_V7\\Obelix.onnx",
+            "reward": -4.034333718319734,
+            "creation_time": 1774801513.4803877,
+            "auxillary_file_paths": [
+                "results\\Obelix_V7\\Obelix\\Obelix-1500009.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.13.1+cpu"
+    }
+}
